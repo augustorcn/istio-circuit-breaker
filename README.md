@@ -80,4 +80,4 @@ kubectl exec "$FORTIO_POD" -c fortio -- fortio load -c 2 -qps 0 -n 200 -loglevel
 
 ### Run Kiali and see traffic graph
 
-![Alt text](image-2.png)
+![Alt text](image.png)
