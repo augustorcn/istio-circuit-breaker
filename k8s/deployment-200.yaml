@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicex
+spec:
+  selector:
+    matchLabels:
+      app: servicex
+  template:
+    metadata:
+      labels:
+        app: servicex
+        version: "200"
+    spec:
+      containers:
+        - name: servicex
+          image: augustorcn/go-circuit-breaker:latest
+          ports:
+            - containerPort: 8000
