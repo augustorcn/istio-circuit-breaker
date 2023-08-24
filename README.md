@@ -30,7 +30,7 @@ kubectl label namespace default istio-injection=enabled
 ## Run k8s manifests
 
 ```sh
-kubectl apply -f .
+kubectl apply -f k8s/
 ```
 
 ## Istio dashboard addons: Grafana, Jaeger, Kiali and Phometheus
@@ -80,4 +80,4 @@ kubectl exec "$FORTIO_POD" -c fortio -- fortio load -c 2 -qps 0 -n 200 -loglevel
 
 ### Run Kiali and see traffic graph
 
-![Alt text](docs/image.png)
+![Alt text](docs/kiali-dashboard.png)
